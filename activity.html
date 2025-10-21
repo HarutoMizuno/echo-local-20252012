@@ -20,7 +20,7 @@
         <!--favicon-->
         <link rel="icon" href="icon/favicon-logo.png" type="image/x-icon">
         <!--オリジナルcss-->
-        <link rel="stylesheet" href="css__activityPage/activity.css">
+        <link rel="stylesheet" href="css-activityPage/activity.css">
         <!--jquery-->
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <!--構造化マークアップ-->
@@ -39,13 +39,16 @@
         <meta name="robots" content="noindex, follow">
     </head>
     <body>
+        <div class="skipLink">
+            <a class="skipLink_text" href="#main" aria-hidden="true">メインコンテンツへ</a>
+        </div>
         <header id="header" class="l-header__subpage">
             <nav class="nav__pc">
                 <ul class="navPc_list">
-                    <li><a class="navPc_item" href="about.html">ECHOについて</a></li>
+                    <li><a class="navPc_item" aria-label="エコーについて" href="about.html">ECHOについて</a></li>
                     <li><a class="navPc_item" href="activity.html">活動紹介</a></li>
                     <li><a class="navPc_item" href="contact.html">お問い合わせ</a></li>
-                    <li class="navPc_home"><a class="navPc_item navPc_item__home" href="index.html">HOME</a></li>
+                    <li class="navPc_home"><a class="navPc_item navPc_item__home" aria-label="ホーム" href="index.html">HOME</a></li>
                 </ul>
             </nav>
             <nav class="nav__sp">
@@ -57,7 +60,7 @@
                             <span class="line__arrow line2__arrow"></span>
                         </div>
                     </a>
-                    <div class="navSp_hamburger">
+                    <div class="navSp_hamburger" tabindex="0">
                         <span class="line line1"></span>
                         <span class="line line2"></span>
                         <span class="line line3"></span>
@@ -69,7 +72,14 @@
                             <span class="line__arrow line1__arrow"></span>
                             <span class="line__arrow line2__arrow"></span>
                         </div>
-                        <a class="dropdown_itemText" href="about.html">ECHOについて</a>
+                        <a class="dropdown_itemText" aria-label="ホーム" href="index.html">HOME</a>
+                    </li>
+                    <li class="dropdown_item">
+                        <div class="arrow">
+                            <span class="line__arrow line1__arrow"></span>
+                            <span class="line__arrow line2__arrow"></span>
+                        </div>
+                        <a class="dropdown_itemText" href="about.html" aria-label="エコーについて">ECHOについて</a>
                     </li>
                     <li class="dropdown_item">
                         <div class="arrow">
@@ -79,11 +89,7 @@
                         <a class="dropdown_itemText" href="activity.html">活動紹介</a>
                     </li>
                     <li class="dropdown_item">
-                        <div class="arrow">
-                            <span class="line__arrow line1__arrow"></span>
-                            <span class="line__arrow line2__arrow"></span>
-                        </div>
-                        <a class="dropdown_itemText" href="index.html">HOME</a>
+                        <button class="dropdown_itemText dropdown_itemText__close">メニューを閉じる</button>
                     </li>
                 </ul>
             </nav>    
@@ -102,7 +108,7 @@
             </section>
             <img class="l-radiousImg" src="img/radious.png">
             <section class="l-body">
-                <h1 class="m-title">ECHOの活動について</h1>
+                <h1 class="m-title" aria-label="エコーのかつどうについて">ECHOの活動について</h1>
                 <div class="activity_item">
                     <img class="activity_itemImg" src="" alt="">
                     <div class="activity_itemImg__sp">
