@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5, h6{
     transition: opacity 0.3s, transform 0.3s, visibility 0s 0.3s;
 
     @include media-tablet{
-        width: 520px;
+        width: 600px;
     }
     @include media-sp {
         width: auto;
@@ -465,7 +465,7 @@ h1, h2, h3, h4, h5, h6{
     left: 10px;
 
     .skipLink_text:focus{
-        transform: scale(1.5);
+        transform: scale(1.3);
         transition: transform 1s;
     }
 }
