@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 1024px) {
   .l-header__errorPage {
-    width: 520px;
+    width: 600px;
   }
 }
 @media (max-width: 750px) {

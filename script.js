@@ -176,21 +176,3 @@ jQuery(window).on('load', function(){
     });
 
 })
-    
-        
-
-    
-
-//const width = jQuery(window).width();
-/*
-jQuery(window).on('load', function(){
-    
-        setTimeout(function() {
-        jQuery('.l-loadingPage').addClass('l-loadingPage__is-active');
-
-        jQuery('.l-mainPage').fadeIn(2000); 
-        },2000);
-
-    }),
-
-*/ 
