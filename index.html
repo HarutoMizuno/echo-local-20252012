@@ -1,9 +1,37 @@
+<!--
+|  ___________|
+|  |
+|  |
+|  __________|
+|  |
+|  |
+|_____________| 
+ /  __________|
+/  |
+|  |
+|  |
+\  |
+ \____________|
+|  |        | |
+|  |        | |      
+|  |        | |
+|  _________  |
+|  |        | |
+|  |        | |
+|__|        |_|
+ /  _________ \
+/  /         \ \
+|  |         | |
+|  |         | |
+\  \        /  /
+ \____________/
+-->
 <!DOCTYPE html>
 <html lang="ja">
     <head>
         <meta charset="utf-8">
-        <title>ECHO_local</title>
-        <meta name="description" content="######">
+        <title>【体験入会実施中】トップページ-ECHO 南山大学の環境ボランティアサークル</title>
+        <meta name="description" content="南山大学の環境ボランティアサークルECHO（エコー）。キャンパス緑化から海岸清掃まで、楽しく地球に優しい活動をしています。">
         <meta property="og:url" content="https://###########">
         <meta property="og:type" content="website">
         <meta property="og:title" content="ECHO_local">
@@ -20,7 +48,7 @@
         <!--favicon-->
         <link rel="icon" href="icon/favicon-logo.png" type="image/x-icon">
         <!--オリジナルcss-->
-        <link rel="stylesheet" href="css__topPage/style.css">
+        <link rel="stylesheet" href="css-topPage/style.css">
         <!--jquery-->
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <!--構造化マークアップ-->
@@ -47,13 +75,16 @@
         </div>
     </div>
     <div class="l-mainPage">
+        <div class="skipLink">
+            <a class="skipLink_text" href="#main">メインコンテンツへ</a>
+        </div>
         <header id="header" class="l-header">
             <nav class="nav__pc">
                 <ul class="navPc_list">
-                    <li><a class="navPc_item" href="about.html">ECHOについて</a></li>
+                    <li><a class="navPc_item" aria-label="エコーについて" href="about.html">ECHOについて</a></li>
                     <li><a class="navPc_item" href="activity.html">活動紹介</a></li>
                     <li><a class="navPc_item" href="contact.html">お問い合わせ</a></li>
-                    <li class="navPc_home"><a class="navPc_item navPc_item__home" href="index.html">HOME</a></li>
+                    <li class="navPc_home"><a class="navPc_item navPc_item__home" aria-label="ホーム" href="index.html">HOME</a></li>
                 </ul>
             </nav>
             <nav class="nav__sp">
@@ -65,7 +96,7 @@
                             <span class="line__arrow line2__arrow"></span>
                         </div>
                     </a>
-                    <div class="navSp_hamburger">
+                    <div class="navSp_hamburger" tabindex="0">
                         <span class="line line1"></span>
                         <span class="line line2"></span>
                         <span class="line line3"></span>
@@ -77,7 +108,14 @@
                             <span class="line__arrow line1__arrow"></span>
                             <span class="line__arrow line2__arrow"></span>
                         </div>
-                        <a class="dropdown_itemText" href="about.html">ECHOについて</a>
+                        <a class="dropdown_itemText" aria-label="ホーム" href="index.html">HOME</a>
+                    </li>
+                    <li class="dropdown_item">
+                        <div class="arrow">
+                            <span class="line__arrow line1__arrow"></span>
+                            <span class="line__arrow line2__arrow"></span>
+                        </div>
+                        <a class="dropdown_itemText" href="about.html" aria-label="エコーについて">ECHOについて</a>
                     </li>
                     <li class="dropdown_item">
                         <div class="arrow">
@@ -87,11 +125,7 @@
                         <a class="dropdown_itemText" href="activity.html">活動紹介</a>
                     </li>
                     <li class="dropdown_item">
-                        <div class="arrow">
-                            <span class="line__arrow line1__arrow"></span>
-                            <span class="line__arrow line2__arrow"></span>
-                        </div>
-                        <a class="dropdown_itemText" href="index.html">HOME</a>
+                        <button class="dropdown_itemText dropdown_itemText__close">メニューを閉じる</button>
                     </li>
                 </ul>
             </nav>    
@@ -99,29 +133,29 @@
         <main id="main" class="l-main">
             <section class="l-mainVisual">
                 <div class="mainVisual_const">
-                    <img class="tepeImg tepe__top" src="img/mainvisual-tepe.png">
                     <div class="const_board">
                         <div class="board_content">
                             <p class="board_text board_text__top" aria-hidden="true">ご迷惑おかけします</p>
-                            <p class="board_text board_text__jobTitle">南山大学環境系サークル</p>
-                            <h1 class="board_text board_text__nameTop" aria-hidden="true">ECHO</h1>
+                            <h1>
+                                <span class="board_text board_text__jobTitle">南山大学環境系サークル</span>
+                                <span class="board_text board_text__nameTop" aria-label="エコー">ECHO</span>
+                            </h1>
                             <p class="board_text board_text__construction" aria-hidden="true">建設工事中</p>
                         </div>
                     </div>
-                    <img class="tepeImg tepe__bottom" src="img/mainvisual-tepe.png">
                 </div>
             </section>
             <section class="l-topNews">
                 <h2 class="topNews_title">NEWS</h2>
-                <a class="topNews_item">
+                <a class="topNews_item" href="#">
                     <p class="topNews_itemPostDate">投稿日　8月15日</p>
                     <p class="topNews_itemTitle">テキストテキストテキスト</p>
                 </a>
-                <a class="topNews_item">
+                <a class="topNews_item" href="#">
                     <p class="topNews_itemPostDate">投稿日　8月15日</p>
                     <p class="topNews_itemTitle">テキストテキストテキスト</p>
                 </a>
-                <a class="topNews_item">
+                <a class="topNews_item" href="#">
                     <p class="topNews_itemPostDate">投稿日　8月15日</p>
                     <p class="topNews_itemTitle">テキストテキストテキスト</p>
                 </a>
@@ -164,11 +198,12 @@
             <img class="l-radiousImg" src="img/radious.png">
             <section class="l-activity">
                 <div class="activity_title">
-                    <h2 class="activity_titleText">ECHOの活動</h2>
+                    <h2 class="activity_titleText" aria-label="エコーの活動">ECHOの活動</h2>
                     <p class="activity_titleText__description">
                         テキストテキストテキストテキストテキストテキスト
                     </p>
                 </div>
+
                 <div class="activity_item">
                     <img class="activity_itemImg" src="" alt="">
                     <div class="activity_itemImg__sp">
@@ -183,13 +218,19 @@
                                 テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
                                 テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
                                 テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                テキストテキストテキストテキストテキストテキストテキストテキスト
                             </p>
                         </div>
                     </div>
                 </div>
+
                 <div class="activity_item">
+                    <img class="activity_itemImg activity_itemImg__r" src="" alt="">
+                    <div class="activity_itemImg__sp">
+                        <img src="" alt="">
+                    </div>
                     <div class="activity_itemContent activity_itemContent__r">
-                        <div class="activity_itemText">
+                        <div class="activity_itemText__r">
                             <h3 class="activity_itemTitle">タイトルタイトル</h3>
                             <p class="activity_itemDescription">
                                 テキストテキストテキストテキストテキストテキストテキストテキスト
@@ -199,11 +240,8 @@
                             </p>
                         </div>
                     </div>
-                    <img class="activity_itemImg activity_itemImg__r" src="" alt="">
-                    <div class="activity_itemImg__sp">
-                        <img src="" alt="">
-                    </div>
                 </div>
+
                 <div class="activity_item">
                     <img class="activity_itemImg" src="" alt="">
                     <div class="activity_itemImg__sp">
@@ -221,9 +259,14 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="activity_item">
+                    <img class="activity_itemImg activity_itemImg__r" src="" alt="">
+                    <div class="activity_itemImg__sp">
+                        <img src="" alt="">
+                    </div>
                     <div class="activity_itemContent activity_itemContent__r">
-                        <div class="activity_itemText">
+                        <div class="activity_itemText__r">
                             <h3 class="activity_itemTitle">タイトルタイトル</h3>
                             <p class="activity_itemDescription">
                                 テキストテキストテキストテキストテキストテキストテキストテキスト
@@ -233,11 +276,8 @@
                             </p>
                         </div>
                     </div>
-                    <img class="activity_itemImg activity_itemImg__r" src="" alt="">
-                    <div class="activity_itemImg__sp">
-                        <img src="" alt="">
-                    </div>
                 </div>
+
             </section>
             <img class="l-waveImg__b" src="img/wave_b.png">
             <section class="l-intro">
@@ -400,7 +440,7 @@
                 <div class="container__cta">
                     <h2 class="cta_title">体験入会実施中！</h2>
                     <p class="cta_text">お申し込みこちらから</p>
-                    <a class="cta_button" href="">お申込みフォーム</a>
+                    <a class="cta_button" id="cta_button" href="">お申込みフォーム</a>
                 </div>
             </section>   
             <!--js-->   
