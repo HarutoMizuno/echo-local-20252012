@@ -2,13 +2,12 @@
 <html lang="ja">
     <head>
         <meta charset="utf-8">
-        <title>ECHO_local</title>
-        <meta name="description" content="######">
+        <title>【お問い合わせページ】ECHO-南山大学の環境ボランティアサークル</title>
+        <meta name="description" content="南山大学ECHOへの入会、ボランティア参加、企業・団体からの連携依頼はこちら。メールフォームからお気軽にご連絡ください。">
         <meta property="og:url" content="https://###########">
         <meta property="og:type" content="website">
-        <meta property="og:title" content="ECHO_local">
-        <meta property="og:description" content="##########">
-        <meta property="og:image" content="https://##########">
+        <meta property="og:title" content="【お問い合わせページ】ECHO-南山大学の環境ボランティアサークル">
+        <meta property="og:description" content="南山大学ECHOへの入会、ボランティア参加、企業・団体からの連携依頼はこちら。メールフォームからお気軽にご連絡ください。">
         <!--リセットCSS-->
         <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
         <!--viewport-->
@@ -17,6 +16,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Life+Savers&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Life+Savers&family=Noto+Sans+JP&family=Yomogi&display=swap" rel="stylesheet">
         <!--favicon-->
         <link rel="icon" href="icon/favicon-logo.png" type="image/x-icon">
         <!--オリジナルcss-->
@@ -37,22 +38,22 @@
             }
         </script>-->
         
-        <meta name="robots" content="noindex, follow">
+        <meta name="robots" content="noindex, nofollow">
     </head>
     <body>
-        <div class="skipLink">
-            <a class="skipLink_text" href="#main" aria-hidden="true">メインコンテンツへ</a>
+        <div class="skipLink" aria-hidden="true">
+            <a class="skipLink_text" href="#main">メインコンテンツへ</a>
         </div>
-        <header id="header" class="l-header__subpage">
+        <header id="header" class="l-header__subpage" aria-hidden="true">
             <nav class="nav__pc">
-                <ul class="navPc_list">
-                    <li><a class="navPc_item" aria-label="エコーについて" href="about.html">ECHOについて</a></li>
-                    <li><a class="navPc_item" href="activity.html">活動紹介</a></li>
-                    <li><a class="navPc_item" href="contact.html">お問い合わせ</a></li>
-                    <li class="navPc_home"><a class="navPc_item navPc_item__home" aria-label="ホーム" href="index.html">HOME</a></li>
+                <ul role="menu" class="navPc_list">
+                    <li role="menuitem"><a class="navPc_item" href="about.html">ECHOについて</a></li>
+                    <li role="menuitem"><a class="navPc_item" href="activity.html">活動紹介</a></li>
+                    <li role="menuitem"><a class="navPc_item" href="contact.html">お問い合わせ</a></li>
+                    <li role="menuitem"><a class="navPc_item" href="index.html">ホーム</a></li>
                 </ul>
             </nav>
-            <nav class="nav__sp">
+            <nav class="nav__sp nav__sp__subpage">
                 <div class="navSp_menu">
                     <a class="navSp_contact" href="contact.html">
                         <p class="navSp_contactText">お問い合わせ</p>
@@ -61,55 +62,51 @@
                             <span class="line__arrow line2__arrow"></span>
                         </div>
                     </a>
-                    <div class="navSp_hamburger" tabindex="0">
+                    <div class="navSp_hamburger" tabindex="0" aria-expanded="true">
                         <span class="line line1"></span>
                         <span class="line line2"></span>
                         <span class="line line3"></span>
                     </div>
                 </div>      
-                <ul class="navSp_dropdown">
-                    <li class="dropdown_item">
+                <ul rolw="menu" class="navSp_dropdown" aria-hidden="true">
+                    <li role="menuitem" class="dropdown_item">
                         <div class="arrow">
                             <span class="line__arrow line1__arrow"></span>
                             <span class="line__arrow line2__arrow"></span>
                         </div>
-                        <a class="dropdown_itemText" aria-label="ホーム" href="index.html">HOME</a>
+                        <a class="dropdown_itemText" href="index.html">ホーム</a>
                     </li>
-                    <li class="dropdown_item">
+                    <li role="menuitem" class="dropdown_item">
                         <div class="arrow">
                             <span class="line__arrow line1__arrow"></span>
                             <span class="line__arrow line2__arrow"></span>
                         </div>
-                        <a class="dropdown_itemText" href="about.html" aria-label="エコーについて">ECHOについて</a>
+                        <a class="dropdown_itemText" href="about.html">ECHOについて</a>
                     </li>
-                    <li class="dropdown_item">
+                    <li role="menuitem" class="dropdown_item">
                         <div class="arrow">
                             <span class="line__arrow line1__arrow"></span>
                             <span class="line__arrow line2__arrow"></span>
                         </div>
                         <a class="dropdown_itemText" href="activity.html">活動紹介</a>
                     </li>
-                    <li class="dropdown_item">
+                    <li role="menuitem" class="dropdown_item">
                         <button class="dropdown_itemText dropdown_itemText__close">メニューを閉じる</button>
                     </li>
                 </ul>
             </nav>    
         </header>
         <main id="main" class="l-main">
-            <section class="l-mainVisual">
-                <div class="mainVisual_content">
-                    <div class="const_board">
-                        <div class="board_content">
-                            <p class="board_text board_text__top" aria-hidden="true">ご迷惑おかけします</p>
-                            <p class="board_text board_text__name" aria-hidden="true">ECHO建設工事中</p>
-                            <p class="board_text board_text__construction" aria-hidden="true">ご協力お願いします</p>
-                        </div>
+            <div class="l-mainVisual">
+                <div class="mainVisual_back">
+                    <div class="mV_content">
+                        <h1 class="m-title">Contact</h1>
                     </div>
                 </div>
-            </section>
-            <img class="l-radiousImg" src="img/radious.png">
-            <h1 class="m-title">お問い合わせ</h1>
+                <img class="mV_radiousImg" src="img/radious.png">
+            </div>
             <section class="l-cta">
+                <h2 class="cta_title">お問い合わせ</h2>
                 <div class="container__cta">
                     <h2 class="cta_title__conPage">お問い合わせはこちらから</h2>
                     <p class="cta_text__conPage">要件とお名前を記入してくださいね！</p>
@@ -118,7 +115,7 @@
             </section>
             <img class="l-waveImg__b" src="img/wave_b.png">
             <section class="l-sns">
-                <h2 class="sns_title" aria-label="エスエヌエスリンク">SNSリンク</h2>
+                <h2 class="sns_title">SNSリンク</h2>
                 <div class="sns_content">
                     <p class="sns_text">
                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
