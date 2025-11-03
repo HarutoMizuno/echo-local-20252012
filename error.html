@@ -17,6 +17,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Life+Savers&family=Noto+Sans+JP&family=Yomogi&display=swap" rel="stylesheet">
         <!--favicon-->
         <link rel="icon" href="icon/favicon-logo.png" type="image/x-icon">
         <!--オリジナルcss-->
@@ -39,13 +40,13 @@
         <meta name="robots" content="noindex, nofollow">
     </head>
     <body>
-        <header id="header" class="l-header__errorPage">
+        <header id="header" class="l-header__errorPage" aria-hidden="true">
             <nav class="nav__pc">
-                <ul class="navPc_list">
-                    <li><a class="navPc_item" aria-label="エコーについて" href="about.html">ECHOについて</a></li>
-                    <li><a class="navPc_item" href="activity.html">活動紹介</a></li>
-                    <li><a class="navPc_item" href="contact.html">お問い合わせ</a></li>
-                    <li class="navPc_home"><a class="navPc_item navPc_item__home" aria-label="ホーム" href="index.html">HOME</a></li>
+                <ul role="menu" class="navPc_list">
+                    <li role="menuitem"><a class="navPc_item" href="about.html">ECHOについて</a></li>
+                    <li role="menuitem"><a class="navPc_item" href="activity.html">活動紹介</a></li>
+                    <li role="menuitem"><a class="navPc_item" href="contact.html">お問い合わせ</a></li>
+                    <li role="menuitem"><a class="navPc_item" href="index.html">ホーム</a></li>
                 </ul>
             </nav>
             <nav class="nav__sp">
@@ -57,35 +58,35 @@
                             <span class="line__arrow line2__arrow"></span>
                         </div>
                     </a>
-                    <div class="navSp_hamburger" tabindex="0">
+                    <div class="navSp_hamburger" tabindex="0" aria-expanded="true">
                         <span class="line line1"></span>
                         <span class="line line2"></span>
                         <span class="line line3"></span>
                     </div>
                 </div>      
-                <ul class="navSp_dropdown">
-                    <li class="dropdown_item">
+                <ul role="menu" class="navSp_dropdown" aria-hidden="true">
+                    <li role="menuitem" class="dropdown_item">
                         <div class="arrow">
                             <span class="line__arrow line1__arrow"></span>
                             <span class="line__arrow line2__arrow"></span>
                         </div>
-                        <a class="dropdown_itemText" aria-label="ホーム" href="index.html">HOME</a>
+                        <a class="dropdown_itemText" href="index.html">ホーム</a>
                     </li>
-                    <li class="dropdown_item">
+                    <li role="menuitem" class="dropdown_item">
                         <div class="arrow">
                             <span class="line__arrow line1__arrow"></span>
                             <span class="line__arrow line2__arrow"></span>
                         </div>
-                        <a class="dropdown_itemText" href="about.html" aria-label="エコーについて">ECHOについて</a>
+                        <a class="dropdown_itemText" href="about.html">ECHOについて</a>
                     </li>
-                    <li class="dropdown_item">
+                    <li role="menuitem" class="dropdown_item">
                         <div class="arrow">
                             <span class="line__arrow line1__arrow"></span>
                             <span class="line__arrow line2__arrow"></span>
                         </div>
                         <a class="dropdown_itemText" href="activity.html">活動紹介</a>
                     </li>
-                    <li class="dropdown_item">
+                    <li role="menuitem" class="dropdown_item">
                         <button class="dropdown_itemText dropdown_itemText__close">メニューを閉じる</button>
                     </li>
                 </ul>
