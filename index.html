@@ -34,9 +34,8 @@
         <meta name="description" content="南山大学の環境ボランティアサークルECHO（エコー）。キャンパス緑化から海岸清掃まで、楽しく地球に優しい活動をしています。">
         <meta property="og:url" content="https://###########">
         <meta property="og:type" content="website">
-        <meta property="og:title" content="ECHO_local">
-        <meta property="og:description" content="##########">
-        <meta property="og:image" content="https://##########">
+        <meta property="og:title" content="【体験入会実施中】トップページ-ECHO 南山大学の環境ボランティアサークル">
+        <meta property="og:description" content="南山大学の環境ボランティアサークルECHO（エコー）。キャンパス緑化から海岸清掃まで、楽しく地球に優しい活動をしています。">
         <!--リセットCSS-->
         <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
         <!--viewport-->
@@ -45,6 +44,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Life+Savers&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Life+Savers&family=Noto+Sans+JP&family=Yomogi&display=swap" rel="stylesheet">
         <!--favicon-->
         <link rel="icon" href="icon/favicon-logo.png" type="image/x-icon">
         <!--オリジナルcss-->
@@ -65,29 +66,29 @@
             }
         </script>-->
         
-        <meta name="robots" content="noindex, follow">
+        <meta name="robots" content="noindex, nofollow">
     </head>
     <body>
-    <div class="l-loadingPage">
+    <div class="l-loadingPage" aria-hidden="false">
         <div class="loading_title">
             <p class="loading_titleTop" aria-hidden="true">南山大学環境系サークル</p>
             <p class="loading_titleBottom" aria-hidden="true">ECHO</p>
         </div>
     </div>
-    <div class="l-mainPage">
-        <div class="skipLink">
+    <div class="l-mainPage" aria-hidden="true">
+        <div class="skipLink" aria-hidden="true">
             <a class="skipLink_text" href="#main">メインコンテンツへ</a>
         </div>
-        <header id="header" class="l-header">
+        <header id="header" class="l-header" aria-hidden="true">
             <nav class="nav__pc">
-                <ul class="navPc_list">
-                    <li><a class="navPc_item" aria-label="エコーについて" href="about.html">ECHOについて</a></li>
-                    <li><a class="navPc_item" href="activity.html">活動紹介</a></li>
-                    <li><a class="navPc_item" href="contact.html">お問い合わせ</a></li>
-                    <li class="navPc_home"><a class="navPc_item navPc_item__home" aria-label="ホーム" href="index.html">HOME</a></li>
+                <ul role="menu" class="navPc_list">
+                    <li role="menuitem"><a class="navPc_item" href="about.html">ECHOについて</a></li>
+                    <li role="menuitem"><a class="navPc_item" href="activity.html">活動紹介</a></li>
+                    <li role="menuitem"><a class="navPc_item" href="contact.html">お問い合わせ</a></li>
+                    <li role="menuitem"><a class="navPc_item" href="index.html">ホーム</a></li>
                 </ul>
             </nav>
-            <nav class="nav__sp">
+            <nav class="nav__sp nav__sp__toppage">
                 <div class="navSp_menu">
                     <a class="navSp_contact" href="contact.html">
                         <p class="navSp_contactText">お問い合わせ</p>
@@ -96,74 +97,73 @@
                             <span class="line__arrow line2__arrow"></span>
                         </div>
                     </a>
-                    <div class="navSp_hamburger" tabindex="0">
+                    <div class="navSp_hamburger" tabindex="0" aria-expanded="true">
                         <span class="line line1"></span>
                         <span class="line line2"></span>
                         <span class="line line3"></span>
                     </div>
                 </div>      
-                <ul class="navSp_dropdown">
-                    <li class="dropdown_item">
+                <ul role="menu" class="navSp_dropdown" aria-hidden="true">
+                    <li class="dropdown_item" role="menuitem">
                         <div class="arrow">
                             <span class="line__arrow line1__arrow"></span>
                             <span class="line__arrow line2__arrow"></span>
                         </div>
-                        <a class="dropdown_itemText" aria-label="ホーム" href="index.html">HOME</a>
+                        <a class="dropdown_itemText" href="index.html">ホーム</a>
                     </li>
-                    <li class="dropdown_item">
+                    <li class="dropdown_item" role="menuitem">
                         <div class="arrow">
                             <span class="line__arrow line1__arrow"></span>
                             <span class="line__arrow line2__arrow"></span>
                         </div>
-                        <a class="dropdown_itemText" href="about.html" aria-label="エコーについて">ECHOについて</a>
+                        <a class="dropdown_itemText" href="about.html">ECHOについて</a>
                     </li>
-                    <li class="dropdown_item">
+                    <li class="dropdown_item" role="menuitem">
                         <div class="arrow">
                             <span class="line__arrow line1__arrow"></span>
                             <span class="line__arrow line2__arrow"></span>
                         </div>
                         <a class="dropdown_itemText" href="activity.html">活動紹介</a>
                     </li>
-                    <li class="dropdown_item">
+                    <li class="dropdown_item" role="menuitem">
                         <button class="dropdown_itemText dropdown_itemText__close">メニューを閉じる</button>
                     </li>
                 </ul>
             </nav>    
         </header>
         <main id="main" class="l-main">
-            <section class="l-mainVisual">
-                <div class="mainVisual_const">
-                    <div class="const_board">
-                        <div class="board_content">
-                            <p class="board_text board_text__top" aria-hidden="true">ご迷惑おかけします</p>
-                            <h1>
-                                <span class="board_text board_text__jobTitle">南山大学環境系サークル</span>
-                                <span class="board_text board_text__nameTop" aria-label="エコー">ECHO</span>
+            <div class="l-mainVisual">
+                <div class="mainVisual_back">
+                    <div class="mV_content">
+                        <div class="mV_title">
+                            <h1 class="mV_titleText">
+                                <span class="mV_textUn">NanzanUnivercity</span>
+                                <span class="mV_textEcho">ECHO</span>
                             </h1>
-                            <p class="board_text board_text__construction" aria-hidden="true">建設工事中</p>
+                            <p class="mV_subtitle">環境ボランティアサークル</p>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
             <section class="l-topNews">
                 <h2 class="topNews_title">NEWS</h2>
                 <a class="topNews_item" href="#">
-                    <p class="topNews_itemPostDate">投稿日　8月15日</p>
+                    <p class="topNews_itemPostDate">投稿日<br>8月15日</p>
                     <p class="topNews_itemTitle">テキストテキストテキスト</p>
                 </a>
                 <a class="topNews_item" href="#">
-                    <p class="topNews_itemPostDate">投稿日　8月15日</p>
+                    <p class="topNews_itemPostDate">投稿日<br>8月15日</p>
                     <p class="topNews_itemTitle">テキストテキストテキスト</p>
                 </a>
                 <a class="topNews_item" href="#">
-                    <p class="topNews_itemPostDate">投稿日　8月15日</p>
+                    <p class="topNews_itemPostDate">投稿日<br>8月15日</p>
                     <p class="topNews_itemTitle">テキストテキストテキスト</p>
                 </a>
             </section>
             <img class="l-waveImg__a" src="img/wave_a.png">
-            <section class="l-subhead">
+            <div class="l-subhead">
                 <div class="subhead_item">
-                    <p class="subheadText">
+                    <p class="subheadText" aria-hidden="true">
                         テキストテキストテキストテキストテキストテキストテキストテキストテキスト
                         テキストテキストテキストテキストテキストテキストテキストテキストテキスト
                         テキストテキストテキストテキストテキストテキストテキストテキストテキスト
@@ -171,7 +171,7 @@
                     </p>
                 </div>
                 <div class="subhead_item">
-                    <p class="subheadText__r">
+                    <p class="subheadText__r" aria-hidden="true">
                         テキストテキストテキストテキストテキストテキストテキストテキストテキスト
                         テキストテキストテキストテキストテキストテキストテキストテキストテキスト
                         テキストテキストテキストテキストテキストテキストテキストテキストテキスト
@@ -179,7 +179,7 @@
                     </p>
                 </div>
                 <div class="subhead_item">
-                    <p class="subheadText">
+                    <p class="subheadText" aria-hidden="true">
                         テキストテキストテキストテキストテキストテキストテキストテキストテキスト
                         テキストテキストテキストテキストテキストテキストテキストテキストテキスト
                         テキストテキストテキストテキストテキストテキストテキストテキストテキスト
@@ -187,18 +187,18 @@
                     </p>
                 </div>
                 <div class="subhead_item">
-                    <p class="subheadText__r">
+                    <p class="subheadText__r" aria-hidden="true">
                         テキストテキストテキストテキストテキストテキストテキストテキストテキスト
                         テキストテキストテキストテキストテキストテキストテキストテキストテキスト
                         テキストテキストテキストテキストテキストテキストテキストテキストテキスト
                         テキストテキストテキストテキストテキストテキストテキストテキストテキスト
                     </p>
                 </div>
-            </section>
+            </div>
             <img class="l-radiousImg" src="img/radious.png">
             <section class="l-activity">
                 <div class="activity_title">
-                    <h2 class="activity_titleText" aria-label="エコーの活動">ECHOの活動</h2>
+                    <h2 class="activity_titleText">ECHOの活動</h2>
                     <p class="activity_titleText__description">
                         テキストテキストテキストテキストテキストテキスト
                     </p>
@@ -341,8 +341,8 @@
             </section>
             <img class="l-radiousImg" src="img/radious.png">
             <section class="l-bread">
-                <h2 class="bread_title">運営メンバー募集！こんな人間あつまれ！</h2>
-                <h2 class="bread_title__sp">運営メンバー募集！<br>こんな人間あつまれ！</h2>
+                <h2 class="bread_title">メンバー募集中！応募お待ちしています</h2>
+                <h2 class="bread_title__sp">メンバー募集中！<br>応募お待ちしています</h2>
                 <ul class="bread_list">
                     <li class="bread_listItem">
                         <div class="bread_ItemCircle"></div>
@@ -371,67 +371,62 @@
                     <h2 class="qa_title">よくある質問</h2>
                     <dl class="qa_item">
                         <dt class="qa_question">
-                            <h3>Q、テキストテキストテキスト？</h3>
+                            Q、テキストテキストテキスト？
                         </dt>
                         <dd class="qa_answer">
-                            <p>A、テキストテキストテキストテキストテキストテキスト
-                               テキストテキストテキストテキストテキストテキストテキストテキスト
-                               テキストテキストテキストテキストテキストテキストテキストテキスト
-                               テキストテキストテキストテキストテキストテキストテキストテキスト
-                               テキストテキストテキストテキストテキストテキスト
-                            </p>
+                            A、テキストテキストテキストテキストテキストテキスト
+                            テキストテキストテキストテキストテキストテキストテキストテキスト
+                            テキストテキストテキストテキストテキストテキストテキストテキスト
+                            テキストテキストテキストテキストテキストテキストテキストテキスト
+                            テキストテキストテキストテキストテキストテキスト
                         </dd>
                     </dl>
                     <dl class="qa_item">
                         <dt class="qa_question">
-                            <h3>Q、テキストテキストテキスト？</h3>
+                            Q、テキストテキストテキスト？
                         </dt>
                         <dd class="qa_answer">
-                            <p>A、テキストテキストテキストテキストテキストテキスト
-                               テキストテキストテキストテキストテキストテキストテキストテキスト
-                               テキストテキストテキストテキストテキストテキストテキストテキスト
-                               テキストテキストテキストテキストテキストテキストテキストテキスト
-                               テキストテキストテキストテキストテキストテキスト
-                            </p>
+                            A、テキストテキストテキストテキストテキストテキスト
+                            テキストテキストテキストテキストテキストテキストテキストテキスト
+                            テキストテキストテキストテキストテキストテキストテキストテキスト
+                            テキストテキストテキストテキストテキストテキストテキストテキスト
+                            テキストテキストテキストテキストテキストテキスト
                         </dd>
                     </dl>
                     <dl class="qa_item">
                         <dt class="qa_question">
-                            <h3>Q、テキストテキストテキスト？</h3>
+                            Q、テキストテキストテキスト？
                         </dt>
                         <dd class="qa_answer">
-                            <p>A、テキストテキストテキストテキストテキストテキスト
-                               テキストテキストテキストテキストテキストテキストテキストテキスト
-                               テキストテキストテキストテキストテキストテキストテキストテキスト
-                               テキストテキストテキストテキストテキストテキストテキストテキスト
-                               テキストテキストテキストテキストテキストテキスト
-                            </p>
+                            A、テキストテキストテキストテキストテキストテキスト
+                            テキストテキストテキストテキストテキストテキストテキストテキスト
+                            テキストテキストテキストテキストテキストテキストテキストテキスト
+                            テキストテキストテキストテキストテキストテキストテキストテキスト
+                            テキストテキストテキストテキストテキストテキスト
                         </dd>
                     </dl>
                     <dl class="qa_item">
                         <dt class="qa_question">
-                            <h3>Q、テキストテキストテキスト？</h3>
+                            Q、テキストテキストテキスト？
                         </dt>
                         <dd class="qa_answer">
-                            <p>A、テキストテキストテキストテキストテキストテキスト
-                               テキストテキストテキストテキストテキストテキストテキストテキスト
-                               テキストテキストテキストテキストテキストテキストテキストテキスト
-                               テキストテキストテキストテキストテキストテキストテキストテキスト
-                               テキストテキストテキストテキストテキストテキスト
-                            </p>
+                            A、テキストテキストテキストテキストテキストテキスト
+                            テキストテキストテキストテキストテキストテキストテキストテキスト
+                            テキストテキストテキストテキストテキストテキストテキストテキスト
+                            テキストテキストテキストテキストテキストテキストテキストテキスト
+                            テキストテキストテキストテキストテキストテキスト
                         </dd>
                     </dl>
                     <dl class="qa_item">
                         <dt class="qa_question">
-                            <h3>Q、テキストテキストテキスト？</h3>
+                            Q、テキストテキストテキスト？
                         </dt>
                         <dd class="qa_answer">
-                            <p>A、テキストテキストテキストテキストテキストテキスト
-                               テキストテキストテキストテキストテキストテキストテキストテキスト
-                               テキストテキストテキストテキストテキストテキストテキストテキスト
-                               テキストテキストテキストテキストテキストテキストテキストテキスト
-                               テキストテキストテキストテキストテキストテキスト
-                            </p>
+                            A、テキストテキストテキストテキストテキストテキスト
+                            テキストテキストテキストテキストテキストテキストテキストテキスト
+                            テキストテキストテキストテキストテキストテキストテキストテキスト
+                            テキストテキストテキストテキストテキストテキストテキストテキスト
+                            テキストテキストテキストテキストテキストテキスト
                         </dd>
                     </dl>
                 </div>
