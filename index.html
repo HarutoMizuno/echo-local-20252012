@@ -1,31 +1,3 @@
-<!--
-|  ___________|
-|  |
-|  |
-|  __________|
-|  |
-|  |
-|_____________| 
- /  __________|
-/  |
-|  |
-|  |
-\  |
- \____________|
-|  |        | |
-|  |        | |      
-|  |        | |
-|  _________  |
-|  |        | |
-|  |        | |
-|__|        |_|
- /  _________ \
-/  /         \ \
-|  |         | |
-|  |         | |
-\  \        /  /
- \____________/
--->
 <!DOCTYPE html>
 <html lang="ja">
     <head>
@@ -49,7 +21,7 @@
         <!--favicon-->
         <link rel="icon" href="icon/favicon-logo.png" type="image/x-icon">
         <!--オリジナルcss-->
-        <link rel="stylesheet" href="css-topPage/style.css">
+        <link rel="preload" href="css-topPage/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <!--jquery-->
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <!--構造化マークアップ-->
@@ -65,13 +37,73 @@
                 "url": "https:########"
             }
         </script>-->
-        
+        <style>
+            /*baseレイヤーとローディングページのスタイルを記述*/
+            a{display: block;color: black;text-decoration: none;}body{background-color: #FCF8ED;line-height: 1.5;font-weight: 400;font-family: "Zen Maru Gothic", sans-serif;font-weight: 400;font-style: normal;}li {list-style: none;color: black;}img {display: block;}h1, h2, h3, h4, h5, h6 {font-weight: 700;}
+            .l-loadingPage {
+                width: 100%;
+                height: 100vh;
+                z-index: 9999;
+                visibility: visible;
+            }
+            .loading_title {
+                padding-top: 30vh;
+            }
+            @media (max-width: 1024px) {
+                .loading_title {padding-top: 35vh;}
+            }
+            @media (max-width: 750px){
+                .loading_title {padding-top: 30vh;}
+            }
+            .loading_titleTop{
+                display: flex;
+                justify-content: center;
+            }
+            @media (max-width: 750px){
+                .loading_titleTop{
+                    flex-direction: column;
+                }
+            }
+            .loading_titleTopText{
+                display: block;
+                font-size: calc(0.1rem + 5vw);
+                font-weight: 700;
+                text-align: center;
+            }
+            @media (max-width: 1024px){
+                .loading_titleTopText{
+                    font-size: calc(0.1rem + 8vw);
+                    text-align: center;
+                }
+            }
+            .loading_titleBottom{
+                font-size: calc(0.1rem + 10vw);
+                letter-spacing: 10px;
+                color: #1e6125;
+                line-height: 1;
+                font-weight: 700;
+                text-align: center;
+            }
+            @media (max-width: 1024px){
+                .loading_titleBottom{
+                    font-size: calc(0.1rem + 15vw);
+                }
+            }
+            @media (max-width: 750px){
+                .loading_titleBottom{
+                    font-size: calc(0.1rem + 20vw);
+                }
+            }
+        </style>
         <meta name="robots" content="noindex, nofollow">
     </head>
     <body>
     <div class="l-loadingPage" aria-hidden="false">
         <div class="loading_title">
-            <p class="loading_titleTop" aria-hidden="true">南山大学環境系サークル</p>
+            <p class="loading_titleTop" aria-hidden="true">
+                <span class="loading_titleTopText">南山大学</span>
+                <span class="loading_titleTopText">環境系サークル</span>
+            </p>
             <p class="loading_titleBottom" aria-hidden="true">ECHO</p>
         </div>
     </div>
@@ -129,7 +161,7 @@
                         <button class="dropdown_itemText dropdown_itemText__close">メニューを閉じる</button>
                     </li>
                 </ul>
-            </nav>    
+            </nav> 
         </header>
         <main id="main" class="l-main">
             <div class="l-mainVisual">
@@ -205,9 +237,9 @@
                 </div>
 
                 <div class="activity_item">
-                    <img class="activity_itemImg" src="" alt="">
+                    <img class="activity_itemImg" src="" alt="活動写真１">
                     <div class="activity_itemImg__sp">
-                        <img src="" alt="">
+                        <img src="" alt="活動写真１">
                     </div>
                     <div class="activity_itemContent">
                         <div class="activity_itemText">
@@ -225,9 +257,9 @@
                 </div>
 
                 <div class="activity_item">
-                    <img class="activity_itemImg activity_itemImg__r" src="" alt="">
+                    <img class="activity_itemImg activity_itemImg__r" src="" alt="活動写真２">
                     <div class="activity_itemImg__sp">
-                        <img src="" alt="">
+                        <img src="" alt="活動写真２">
                     </div>
                     <div class="activity_itemContent activity_itemContent__r">
                         <div class="activity_itemText__r">
@@ -243,9 +275,9 @@
                 </div>
 
                 <div class="activity_item">
-                    <img class="activity_itemImg" src="" alt="">
+                    <img class="activity_itemImg" src="" alt="活動写真３">
                     <div class="activity_itemImg__sp">
-                        <img src="" alt="">
+                        <img src="" alt="活動写真３">
                     </div>
                     <div class="activity_itemContent">
                         <div class="activity_itemText">
@@ -261,9 +293,9 @@
                 </div>
 
                 <div class="activity_item">
-                    <img class="activity_itemImg activity_itemImg__r" src="" alt="">
+                    <img class="activity_itemImg activity_itemImg__r" src="" alt="活動写真４">
                     <div class="activity_itemImg__sp">
-                        <img src="" alt="">
+                        <img src="" alt="活動写真４">
                     </div>
                     <div class="activity_itemContent activity_itemContent__r">
                         <div class="activity_itemText__r">
@@ -284,7 +316,7 @@
                 <h2 class="intro_title">メンバー紹介</h2>
                 <div class="intro_grid">
                     <div class="intro_card">
-                        <img class="intro_cardImg" src="" alt="">
+                        <img class="intro_cardImg" src="" alt="メンバー１">
                         <h3 class="intro_cardTitle">タイトルタイトル</h3>
                         <p>
                             テキストテキストテキストテキストテキストテキスト
@@ -293,7 +325,7 @@
                         </p>
                     </div>
                     <div class="intro_card">
-                        <img class="intro_cardImg" src="" alt="">
+                        <img class="intro_cardImg" src="" alt="メンバー２">
                         <h3 class="intro_cardTitle">タイトルタイトル</h3>
                         <p>
                             テキストテキストテキストテキストテキストテキスト
@@ -302,7 +334,7 @@
                         </p>
                     </div>
                     <div class="intro_card">
-                        <img class="intro_cardImg" src="" alt="">
+                        <img class="intro_cardImg" src="" alt="メンバー３">
                         <h3 class="intro_cardTitle">タイトルタイトル</h3>
                         <p>
                             テキストテキストテキストテキストテキストテキスト
@@ -311,7 +343,7 @@
                         </p>
                     </div>
                     <div class="intro_card">
-                        <img class="intro_cardImg" src="" alt="">
+                        <img class="intro_cardImg" src="" alt="メンバー４">
                         <h3 class="intro_cardTitle">タイトルタイトル</h3>
                         <p>
                             テキストテキストテキストテキストテキストテキスト
@@ -320,7 +352,7 @@
                         </p>
                     </div>
                     <div class="intro_card">
-                        <img class="intro_cardImg" src="" alt="">
+                        <img class="intro_cardImg" src="" alt="メンバー５">
                         <h3 class="intro_cardTitle">タイトルタイトル</h3>
                         <p>
                             テキストテキストテキストテキストテキストテキスト
@@ -329,7 +361,7 @@
                         </p>
                     </div>
                     <div class="intro_card">
-                        <img class="intro_cardImg" src="" alt="">
+                        <img class="intro_cardImg" src="" alt="メンバー６">
                         <h3 class="intro_cardTitle">タイトルタイトル</h3>
                         <p>
                             テキストテキストテキストテキストテキストテキスト
@@ -350,15 +382,15 @@
                     </li>
                     <li class="bread_listItem">
                         <div class="bread_ItemCircle"></div>
-                        <p class="bread_ItemText">楽しい学生生活を求めている</p>
+                        <p class="bread_ItemText">楽しい学生生活を送りたい</p>
                     </li>
                     <li class="bread_listItem">
                         <div class="bread_ItemCircle"></div>
-                        <p class="bread_ItemText">自然教育したい</p>
+                        <p class="bread_ItemText">居場所がほしい！</p>
                     </li>
                     <li class="bread_listItem">
                         <div class="bread_ItemCircle"></div>
-                        <p class="bread_ItemText">自然教育したい</p>
+                        <p class="bread_ItemText">組織運営してみたい</p>
                     </li>
                     <li class="bread_listItem">
                         <div class="bread_ItemCircle"></div>
@@ -371,7 +403,7 @@
                     <h2 class="qa_title">よくある質問</h2>
                     <dl class="qa_item">
                         <dt class="qa_question">
-                            Q、テキストテキストテキスト？
+                            Q、活動頻度と活動場所は？
                         </dt>
                         <dd class="qa_answer">
                             A、テキストテキストテキストテキストテキストテキスト
@@ -383,7 +415,7 @@
                     </dl>
                     <dl class="qa_item">
                         <dt class="qa_question">
-                            Q、テキストテキストテキスト？
+                            Q、参加費用や必要な費用はありますか？
                         </dt>
                         <dd class="qa_answer">
                             A、テキストテキストテキストテキストテキストテキスト
@@ -395,7 +427,7 @@
                     </dl>
                     <dl class="qa_item">
                         <dt class="qa_question">
-                            Q、テキストテキストテキスト？
+                            Q、団体の雰囲気をおしえてください
                         </dt>
                         <dd class="qa_answer">
                             A、テキストテキストテキストテキストテキストテキスト
@@ -407,7 +439,7 @@
                     </dl>
                     <dl class="qa_item">
                         <dt class="qa_question">
-                            Q、テキストテキストテキスト？
+                            Q、インカレサークルですか？
                         </dt>
                         <dd class="qa_answer">
                             A、テキストテキストテキストテキストテキストテキスト
@@ -419,7 +451,31 @@
                     </dl>
                     <dl class="qa_item">
                         <dt class="qa_question">
-                            Q、テキストテキストテキスト？
+                            Q、応募から参加までの流れを教えてください。
+                        </dt>
+                        <dd class="qa_answer">
+                            A、テキストテキストテキストテキストテキストテキスト
+                            テキストテキストテキストテキストテキストテキストテキストテキスト
+                            テキストテキストテキストテキストテキストテキストテキストテキスト
+                            テキストテキストテキストテキストテキストテキストテキストテキスト
+                            テキストテキストテキストテキストテキストテキスト
+                        </dd>
+                    </dl>
+                    <dl class="qa_item">
+                        <dt class="qa_question">
+                            Q、参加応募の締め切りを教えてください
+                        </dt>
+                        <dd class="qa_answer">
+                            A、テキストテキストテキストテキストテキストテキスト
+                            テキストテキストテキストテキストテキストテキストテキストテキスト
+                            テキストテキストテキストテキストテキストテキストテキストテキスト
+                            テキストテキストテキストテキストテキストテキストテキストテキスト
+                            テキストテキストテキストテキストテキストテキスト
+                        </dd>
+                    </dl>
+                    <dl class="qa_item">
+                        <dt class="qa_question">
+                            Q、入会を断られることはありますか？
                         </dt>
                         <dd class="qa_answer">
                             A、テキストテキストテキストテキストテキストテキスト
@@ -439,7 +495,7 @@
                 </div>
             </section>   
             <!--js-->   
-            <script src="script.js"></script>
+            <script src="script-min.js" defer></script>
         </main>
         <footer id="footer" class="l-footer">
             <div class="footer_copyRight">

@@ -4,11 +4,6 @@
         <meta charset="utf-8">
         <title>ページが見つかりませんでした。</title>
         <meta name="description" content="404エラー：ページが見つかりませんでした。">
-        <meta property="og:url" content="https://###########">
-        <meta property="og:type" content="website">
-        <meta property="og:title" content="ECHO_local">
-        <meta property="og:description" content="##########">
-        <meta property="og:image" content="https://##########">
         <!--リセットCSS-->
         <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
         <!--viewport-->
@@ -21,7 +16,7 @@
         <!--favicon-->
         <link rel="icon" href="icon/favicon-logo.png" type="image/x-icon">
         <!--オリジナルcss-->
-        <link rel="stylesheet" href="css-errorPage/error.css">
+        <link rel="preload" href="css-errorPage/error.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <!--jquery-->
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <!--構造化マークアップ-->
@@ -109,7 +104,7 @@
             </p>
         </section>
         <!--js-->
-        <script src="script.js"></script>
+        <script src="script-min.js" defer></script>
         </main>
         <footer id="footer" class="l-footer">
             <div class="footer_copyRight">
